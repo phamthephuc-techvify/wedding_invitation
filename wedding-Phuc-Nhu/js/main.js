@@ -5,7 +5,7 @@
 ==========================================*/
 
 (function($) {
-    var audio = new Audio('https://raw.githubusercontent.com/pmq2212/hanh-phuc-quang-mai/master/music/hon_ca_yeu.mp3');
+    var audio = new Audio('https://raw.githubusercontent.com/phamthephuc-techvify/wedding_invitation/main/music/i-do.mp3');
     var isFirst = true;
     var swiper = new Swiper('.swiper-container', {
         loop: true,
