@@ -5,7 +5,7 @@
 ==========================================*/
 
 (function($) {
-    var audio = new Audio('https://raw.githubusercontent.com/phamthephuc-techvify/wedding_invitation/main/music/i-do.mp3');
+    var audio = new Audio('https://raw.githubusercontent.com/phamthephuc-techvify/wedding_invitation/main/wedding-Phuc-Nhu/music/i-do.mp3');
     var isFirst = true;
     var swiper = new Swiper('.swiper-container', {
         loop: true,
