@@ -103,19 +103,19 @@
             },
 
             messages: {
-                name: "Bạn chưa nhập họ tên.",
-                email: "Bạn chưa nhập email.",
+                name: "Bạn chưa nhập họ và tên.",
                 guest: "Bạn chưa chọn số lượng khách.",
-                events: "Bạn chưa chọn sự kiện"
             },
 
             submitHandler: function (form) {
                 if ($("#loader").css("display") === "inline-block") return 0;
                 var params = $(form).serialize();
+                console.log(params);
+                
                 $("#loader").css("display", "inline-block");
                 $.ajax({
                     type: "GET",
-                    url: "https://script.google.com/macros/s/AKfycbycz38PFfhU2Xd2_cu_qwQ8nmllQ8qUJvxqqgrom6qLpQTd_3XG_lk0gNZCKIqnnAry/exec",
+                    url: "https://script.google.com/macros/s/AKfycbzZvgzIGf76I2P8UMBCzTc0N3ypC_7eFabQgY-78pnQrevaruoi-9gEfxguIm0iCYD4BA/exec",
                     data: params,
                     success: function () {
                         $( "#loader").hide();
@@ -134,6 +134,7 @@
                     }
                 });
                 return false; // required to block normal submit since you used ajax
+                
             }
 
         });
