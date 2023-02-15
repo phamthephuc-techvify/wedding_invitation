@@ -110,7 +110,6 @@
             submitHandler: function (form) {
                 if ($("#loader").css("display") === "inline-block") return 0;
                 var params = $(form).serialize();
-                console.log(params);
                 
                 $("#loader").css("display", "inline-block");
                 $.ajax({
@@ -336,8 +335,12 @@
         if (audio.paused) {
             audio.loop = true;
             audio.play();
+            $('#music-icon').removeClass('fa-music');
+            $('#music-icon').addClass('fa-volume-xmark');
         } else if (!play) {
             audio.pause();
+            $('#music-icon').removeClass('fa-volume-xmark');
+            $('#music-icon').addClass('fa-music');
         }
     }
 

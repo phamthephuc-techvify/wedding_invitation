@@ -182,14 +182,14 @@ Home-page-one
 
 .main-menu nav ul li:hover>a,
 .main-menu nav ul li.active>a {
-    color: #00b4d8 ;
+    color: rgb(228, 217, 217) ;
 }
 
 .header-area.header-area2 .main-menu nav ul li:hover>a {
     color: #caac06;
 }
 .header-area.header-area-3 .main-menu nav ul li:hover>a {
-    color: #00b4d8;
+    color: rgb(228, 217, 217) ;
 }
 
 .main-menu .submenu {
